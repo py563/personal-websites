@@ -100,5 +100,31 @@ prepare_teaching_tools() {
     echo "Warning: teaching .nvmrc asks for Node ${NODE_TEACHING}; this shell has Node $(node -v)." >&2
   fi
   (cd "$dir" && npm ci)
-  export PATH="${dir}/node_modules/.bin:${PATH}"
+  # npm may link node_modules/.bin/sass to the JS "sass" package. Hugo's
+  # dartsass transpiler needs the native binary shipped by sass-embedded.
+  local pkg sass_bin os arch
+  os="$(uname -s)"
+  arch="$(uname -m)"
+  case "${os}-${arch}" in
+    Linux-x86_64)
+      if ldd --version 2>&1 | grep -qi musl; then
+        pkg="sass-embedded-linux-musl-x64"
+      else
+        pkg="sass-embedded-linux-x64"
+      fi
+      ;;
+    Linux-aarch64) pkg="sass-embedded-linux-arm64" ;;
+    Darwin-arm64) pkg="sass-embedded-darwin-arm64" ;;
+    Darwin-x86_64) pkg="sass-embedded-darwin-x64" ;;
+    *)
+      echo "No sass-embedded package mapped for ${os}-${arch}." >&2
+      return 1
+      ;;
+  esac
+  sass_bin="${dir}/node_modules/${pkg}/dart-sass/sass"
+  if [[ ! -x "$sass_bin" ]]; then
+    echo "Native Sass compiler not found at ${sass_bin}." >&2
+    return 1
+  fi
+  export PATH="$(dirname "$sass_bin"):${dir}/node_modules/.bin:${PATH}"
 }

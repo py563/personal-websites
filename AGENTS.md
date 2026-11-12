@@ -41,7 +41,8 @@ Direct Hugo, after the matching extended binary is active and submodules are ini
 # sites/portfolio — Hugo 0.108.0 extended
 hugo --minify --baseURL https://prajwalyashasvi.in/
 
-# sites/teaching — Hugo 0.169.0 extended, node_modules/.bin on PATH
+# sites/teaching — Hugo 0.169.0 extended
+# Put the native sass-embedded binary on PATH before node_modules/.bin.
 hugo --minify --configDir=config --baseURL https://teaching.prajwalyashasvi.in/
 npx -y pagefind --site public
 

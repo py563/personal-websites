@@ -98,7 +98,7 @@ Attach `prajwalyashasvi.in`, `teaching.prajwalyashasvi.in`, and `memoirs.prajwal
 
 **Memoirs or the portfolio looks wrong, or CSS fails.** The shell `hugo` is probably too new. Use `./scripts/build-one.sh`.
 
-**Teaching CSS fails with a Sass error.** `npm ci` must run inside `sites/teaching`, and `node_modules/.bin` must be on `PATH`, so the `sass` binary from `sass-embedded` is visible. `./scripts/build-one.sh teaching` does both. Node 22 matches `.nvmrc`.
+**Teaching CSS fails with a Sass error.** Hugo needs the native `sass` binary from `sass-embedded`, not the JavaScript `sass` package that npm sometimes links as `node_modules/.bin/sass`. `./scripts/build-one.sh teaching` puts the native binary first on `PATH`. Node 22 matches `.nvmrc`.
 
 **Teaching search has no index.** Pagefind runs after Hugo. `validate-all.sh` checks `sites/teaching/public/pagefind/pagefind.js`.
 
