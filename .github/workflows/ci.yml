@@ -1,0 +1,28 @@
+name: Validate sites
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: sites/teaching/.nvmrc
+          cache: npm
+          cache-dependency-path: sites/teaching/package-lock.json
+
+      - name: Build and validate
+        run: ./scripts/validate-all.sh

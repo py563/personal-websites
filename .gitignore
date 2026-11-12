@@ -1,0 +1,17 @@
+# Pinned Hugo binaries downloaded by scripts/
+.hugo/
+
+# Hugo build output at any site
+public/
+resources/_gen/
+hugo_stats.json
+.hugo_build.lock
+
+# Node
+node_modules/
+
+# OS / editor
+.DS_Store
+*.swp
+*~
+.idea/
