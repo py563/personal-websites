@@ -1,0 +1,77 @@
+[
+  {
+    "grouping": "Languages",
+    "skills": [
+      "Java",
+      "Python",
+      "Javascript",
+      "C",
+      "HTML5",
+      { "name": "C#", "icon": "dotnet" },
+      { "name": "Ruby on Rails", "icon": "ruby" },
+      "PHP"
+    ]
+  },
+  {
+    "grouping": "Databases",
+    "skills": [
+      "MySQL",
+      "PostgreSQL",
+      { "name": "Oracle", "icon": "database" },
+      { "name": "OrientDB", "icon": "database" },
+      "MongoDB"
+    ]
+  },
+  {
+    "grouping": "Frameworks",
+    "skills": [
+      { "name": "Spring Boot", "icon": "java" },
+      { "name": "Spring", "icon": "java" },
+      { "name": "Hibernate", "icon": "java" },
+      { "name": "Struts", "icon": "java" },
+      { "name": "Apache Wicket", "icon": "apache" },
+      "Django",
+      "FastAPI",
+      "Node.js",
+      "React",
+      { "name": "HUGO", "icon": "go" },
+      {"name": "Next.js", "icon":"react"},
+      "Selenium"
+    ]
+  },
+  {
+    "grouping": "Operating Systems & Containers & Cloud",
+    "skills": [
+      "Linux",
+      "Windows",
+      "Docker",
+      "AWS",
+      { "name": "Google Cloud", "icon": "googlecloud" }
+    ]
+  },
+  {
+    "grouping": "Tools",
+    "skills": [
+      "git",
+      { "name": "CA Harvest", "icon": "git_pull_request" },
+      { "name": "Microsoft Outlook", "icon": "windows" },
+      { "name": "Adobe Robohelp", "icon": "illustrator" },
+      { "name": "VS Code", "icon": "visualstudio" },
+      "Eclipse",
+      "Arduino",
+      { "name": "MySQL Workbench", "icon": "mysql" }
+    ]
+  },
+  {
+    "grouping": "Domain Knowledge",
+    "skills": [
+      "Cyber Security, Information Security",
+      "IoT",
+      "Health Care",
+      {
+        "name": "Unemployment Insurance",
+        "link": "https://www.nhes.nh.gov/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+baseURL = "https://prajwalyashasvi.in/"
+languageCode = "en-us"
+title = "PY563"
+theme = "hugo-resume"
+enableGitInfo = true
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    tabWidth = 4
+    style = "tango"
+
+[taxonomies]
+    tag = "tags"
+
+[params]
+    firstName = "Prajwal Y"
+    lastName = "Maredukonda"
+    address = "Hyderabad, TG, India"
+    contactNote = "Full Stack Developer"
+    profileImage = "img/prof-2.jpg"
+    email = "hello@prajwalyashasvi.in"
+    description = "Prajwal has around eight years of experience as a programmer in Java, Python & SQL. He also teaches Computer Science courses at an engineering college."
+    favicon = "/favicon.ico"
+    
+    # what sections
+    sections = ["skills","experience","education","publications","creations","contributions","blog"]
+    publicationsAlternateName = "Presentations"
+    showQr = false
+    showContact = true
+    showCertifications = true
+    showSocializations = true
+
+	# do you want to show git hash on page footer and link to repo? Add commit prefix here.
+    gitCommitPrefix = "https://github.com/py563/cv-hugo/commit/"
+	
+[[params.handles]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/prajwalyashasvi/"
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/py563/"
+
+[[params.handles]]
+    link = "https://keybase.io/prajwalyashasvi"
+    name = "Keybase"
+
+[[params.handles]]
+    link = "https://cal.com/py563"
+    name = "Schedule a Meeting"
+    icon = "viber"
+
+[permalinks]
+  publications = "/presentations/:title/"
+    
+[outputs]
+home = ["HTML", "JSON"]
