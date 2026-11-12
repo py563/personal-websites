@@ -1,0 +1,9 @@
+[submodule "sites/portfolio/themes/hugo-resume"]
+	path = sites/portfolio/themes/hugo-resume
+	url = https://github.com/eddiewebb/hugo-resume
+[submodule "sites/teaching/themes/dot-org-hugo-theme"]
+	path = sites/teaching/themes/dot-org-hugo-theme
+	url = https://github.com/cncf/dot-org-hugo-theme.git
+[submodule "sites/memoirs/themes/loveit"]
+	path = sites/memoirs/themes/loveit
+	url = https://github.com/TeamYayin/LoveIt.git
