@@ -1,0 +1,46 @@
+######################## custom scripts & styles ####################
+
+# Add custom assets relative to /static or via https
+# Header/footer brand: layouts/partials/site-brand.html (favicon + PY563)
+custom_js: []
+custom_css:
+  - "/css/brand.css"
+  - "/css/theme-colors.css"
+  - "/css/layout.css"
+  - "/css/contact-form.css"
+
+######################## custom config ####################
+
+### default social share image (can also be set per lang) ###
+images: ["/img/social-share.png"]
+
+github:
+  repo_url: "https://github.com/py563/taught-courses/blob/main"
+  show_edit_link: true
+
+social_links:
+  devstats: ""
+  discord: ""
+  facebook: ""
+  flickr: ""
+  github: "https://github.com/py563"
+  instagram: ""
+  landscape: ""
+  linkedin: "https://www.linkedin.com/in/prajwalyashasvi"
+  mastodon: ""
+  pinterest: ""
+  rss: ""
+  slack: ""
+  stackoverflow: ""
+  threads: ""
+  twitter: "https://x.com/py563"
+  youtube: ""
+
+contact:
+  worker_url: "https://contact-api.prajwalyashasvi.in"
+  source: "teaching.prajwalyashasvi.in"
+
+# Makes the header sticky on tall screens
+sticky_header: true
+# Enable search in header UI
+show_search: true

@@ -1,0 +1,39 @@
+en:
+  languageName: English
+  weight: 1
+  ### copyright (markdown can be used) ###
+  copyright: "Copyright &copy; {{< current_year >}} [Prajwal Yashasvi](https://prajwalyashasvi.in/). All Rights Reserved. Handcrafted With ❤ in Hyderabad. Design inspired from [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo."
+  title: "PY563 | Courses by Prajwal Yashasvi"
+  params:
+    description: "Course materials, syllabi, and teaching resources from Prajwal Yashasvi - college courses, FDPs, talks, and STTPs across engineering colleges in India."
+    ### accessibility ###
+    accessibility:
+      skip_text: "Skip to content"
+      help_text: "Accessibility Statement"
+      help_url: "/accessibility/"
+    ### calls to action ###
+    main_cta:
+      text: "Contact"
+      link: "/contact/"
+    footer_cta:
+      text: "Contact"
+      link: "/contact/"
+    github_edit: "Edit this page on GitHub"
+  menu:
+    main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog/"
+      weight: 2
+    - identifier: "faq"
+      name: "FAQs"
+      url: "/faq/"
+      weight: 3
+    - identifier: "about"
+      name: "About"
+      url: "https://prajwalyashasvi.in/"
+      weight: 4
