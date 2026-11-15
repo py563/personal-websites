@@ -11,6 +11,6 @@ Course site for `https://teaching.prajwalyashasvi.in/`. This directory is its ow
 - The alias `/vce-wsl-vac/` was removed on purpose. Do not add it back unless asked.
 - `content/en/blog` is the teaching blog, not memoirs and not the portfolio notes.
 - Keep `static/CNAME`, course files under `static/courses/`, and certificate PDFs.
-- GitHub edit links still point at `py563/taught-courses`. Leave them until a cutover task says to retarget `py563/personal-websites`.
+- GitHub edit links use `github.repo_url` and open `sites/teaching/content/...` in `py563/personal-websites`.
 
 Dev server from this directory, when you need drafts: `npm run dev:start` after `npm ci`.

@@ -38,7 +38,7 @@ enableRobotsTXT = true
     showSocializations = true
 
 	# do you want to show git hash on page footer and link to repo? Add commit prefix here.
-    gitCommitPrefix = "https://github.com/py563/cv-hugo/commit/"
+    gitCommitPrefix = "https://github.com/py563/personal-websites/commit/"
 	
 [[params.handles]]
     name = "LinkedIn"

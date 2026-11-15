@@ -14,7 +14,7 @@ custom_css:
 images: ["/img/social-share.png"]
 
 github:
-  repo_url: "https://github.com/py563/taught-courses/blob/main"
+  repo_url: "https://github.com/py563/personal-websites/blob/main/sites/teaching"
   show_edit_link: true
 
 social_links:

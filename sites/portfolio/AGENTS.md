@@ -11,6 +11,6 @@ Professional site for `https://prajwalyashasvi.in/`. This directory is its own H
 - `content/blog` here is a short notes section on the portfolio. It is not the memoirs blog.
 - Keep `static/CNAME`, `static/CV.pdf`, `static/PYM_HIP_Resume.pdf`, and `static/.well-known/`.
 - `static/admin` is leftover Netlify CMS pointed at `py563/cv-hugo`. Leave it unless the task is to remove the CMS.
-- Footer commit links use `gitCommitPrefix` aimed at `py563/cv-hugo`. Do not retarget that until DNS cutover is explicitly requested.
+- Footer commit links use `gitCommitPrefix` aimed at `py563/personal-websites`. The hashes are commits in this monorepo.
 
 Dev server: `./scripts/dev.sh portfolio` at http://localhost:1313/
