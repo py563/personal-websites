@@ -7,8 +7,14 @@
       "Javascript",
       "C",
       "HTML5",
-      { "name": "C#", "icon": "dotnet" },
-      { "name": "Ruby on Rails", "icon": "ruby" },
+      {
+        "name": "C#",
+        "devicon": "dotnet"
+      },
+      {
+        "name": "Ruby on Rails",
+        "devicon": "ruby"
+      },
       "PHP"
     ]
   },
@@ -17,25 +23,52 @@
     "skills": [
       "MySQL",
       "PostgreSQL",
-      { "name": "Oracle", "icon": "database" },
-      { "name": "OrientDB", "icon": "database" },
+      {
+        "name": "Oracle",
+        "devicon": "database"
+      },
+      {
+        "name": "OrientDB",
+        "devicon": "database"
+      },
       "MongoDB"
     ]
   },
   {
     "grouping": "Frameworks",
     "skills": [
-      { "name": "Spring Boot", "icon": "java" },
-      { "name": "Spring", "icon": "java" },
-      { "name": "Hibernate", "icon": "java" },
-      { "name": "Struts", "icon": "java" },
-      { "name": "Apache Wicket", "icon": "apache" },
+      {
+        "name": "Spring Boot",
+        "devicon": "java"
+      },
+      {
+        "name": "Spring",
+        "devicon": "java"
+      },
+      {
+        "name": "Hibernate",
+        "devicon": "java"
+      },
+      {
+        "name": "Struts",
+        "devicon": "java"
+      },
+      {
+        "name": "Apache Wicket",
+        "devicon": "apache"
+      },
       "Django",
       "FastAPI",
       "Node.js",
       "React",
-      { "name": "HUGO", "icon": "go" },
-      {"name": "Next.js", "icon":"react"},
+      {
+        "name": "HUGO",
+        "devicon": "go"
+      },
+      {
+        "name": "Next.js",
+        "devicon": "react"
+      },
       "Selenium"
     ]
   },
@@ -46,20 +79,38 @@
       "Windows",
       "Docker",
       "AWS",
-      { "name": "Google Cloud", "icon": "googlecloud" }
+      {
+        "name": "Google Cloud",
+        "devicon": "googlecloud"
+      }
     ]
   },
   {
     "grouping": "Tools",
     "skills": [
       "git",
-      { "name": "CA Harvest", "icon": "git_pull_request" },
-      { "name": "Microsoft Outlook", "icon": "windows" },
-      { "name": "Adobe Robohelp", "icon": "illustrator" },
-      { "name": "VS Code", "icon": "visualstudio" },
+      {
+        "name": "CA Harvest",
+        "devicon": "git_pull_request"
+      },
+      {
+        "name": "Microsoft Outlook",
+        "devicon": "windows"
+      },
+      {
+        "name": "Adobe Robohelp",
+        "devicon": "illustrator"
+      },
+      {
+        "name": "VS Code",
+        "devicon": "visualstudio"
+      },
       "Eclipse",
       "Arduino",
-      { "name": "MySQL Workbench", "icon": "mysql" }
+      {
+        "name": "MySQL Workbench",
+        "devicon": "mysql"
+      }
     ]
   },
   {

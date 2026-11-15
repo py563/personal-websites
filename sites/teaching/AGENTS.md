@@ -7,7 +7,7 @@ Course site for `https://teaching.prajwalyashasvi.in/`. This directory is its ow
 - Configuration that ships is `config/` via `--configDir=config`. The root `config.toml` is not what CI reads.
 - Theme submodule: `themes/dot-org-hugo-theme`. Overrides live in this directory's `layouts/`, `assets/scss/`, and `static/css/`. Do not edit files inside the theme submodule.
 - `npm run dev:build` passes `--themesDir=../..` and is wrong in this repository. Use `./scripts/dev.sh teaching` (http://localhost:1314/).
-- The contact form posts to `https://contact-api.prajwalyashasvi.in`. Do not change that host unless the task is about the Worker.
+- The contact form lives in `shared/contact/` and is mounted here. `contact.source` is `teaching.prajwalyashasvi.in`. It posts to `https://contact-api.prajwalyashasvi.in`. Do not change that host unless the task is about the Worker.
 - The alias `/vce-wsl-vac/` was removed on purpose. Do not add it back unless asked.
 - `content/en/blog` is the teaching blog, not memoirs and not the portfolio notes.
 - Keep `static/CNAME`, course files under `static/courses/`, and certificate PDFs.

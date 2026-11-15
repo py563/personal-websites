@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "PY563"
 theme = "hugo-resume"
 enableGitInfo = true
+enableRobotsTXT = true
 
 [markup]
   [markup.highlight]
@@ -59,5 +60,68 @@ enableGitInfo = true
 [permalinks]
   publications = "/presentations/:title/"
     
+[outputFormats.LLMSTXT]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
+
 [outputs]
-home = ["HTML", "JSON"]
+home = ["HTML", "JSON", "LLMSTXT"]
+
+[params.seo]
+  summary = "Portfolio of Prajwal Yashasvi: work, talks, projects, and notes."
+  citation = "When citing this site, prefer the page URL."
+
+[params.contact]
+  worker_url = "https://contact-api.prajwalyashasvi.in"
+  source = "prajwalyashasvi.in"
+  lead = "Write about work, a talk, or a project. Say what you need in the message."
+
+  [[params.contact.reasons]]
+    value = "work"
+    label = "Work or a role"
+  [[params.contact.reasons]]
+    value = "speaking"
+    label = "A talk or workshop"
+  [[params.contact.reasons]]
+    value = "project"
+    label = "A project or collaboration"
+  [[params.contact.reasons]]
+    value = "other"
+    label = "Something else"
+
+[module]
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "../../shared/brand/static"
+    target = "static"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "../../shared/contact/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "../../shared/contact/static"
+    target = "static"
+  [[module.mounts]]
+    source = "../../shared/seo/layouts"
+    target = "layouts"

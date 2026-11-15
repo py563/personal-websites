@@ -58,6 +58,14 @@ enableGitInfo = true
       url = "/page/about/"
       title = ""
       weight = 4
+    [[languages.te.menu.main]]
+      identifier = "contact"
+      pre = ""
+      post = ""
+      name = "సంప్రదించండి"
+      url = "/page/contact/"
+      title = ""
+      weight = 5
     [languages.te.params]
       # site description
       description = "వాక్యనం మరియు శీర్షికలు"
@@ -156,6 +164,14 @@ enableGitInfo = true
       url = "/page/about/"
       title = ""
       weight = 4
+    [[languages.en.menu.main]]
+      identifier = "contact"
+      pre = ""
+      post = ""
+      name = "Contact"
+      url = "/page/contact/"
+      title = ""
+      weight = 5
     [languages.en.params]
       # site description
       description = "The blog is maintained by prajwal to share his personal experiences and stories."
@@ -253,7 +269,7 @@ enableGitInfo = true
       # title name; 
       name = "Memoirs across the Welkin"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='fas fa-pen-fancy'></i>"
+      pre = "<img class='logo' src='/favicon-32x32.png' width='32' height='32' alt='PY563'>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # whether to use typeit animation for title name
@@ -365,6 +381,8 @@ enableGitInfo = true
     image = "/img/fbavat.jpg"
     # thumbnail URL
     thumbnailUrl = "/img/fbavat.jpg"
+    summary = "Personal essays and stories from Prajwal Yashasvi."
+    citation = "When citing this site, prefer the page URL for the specific post."
 
   # Analytics config
   [params.analytics]
@@ -427,9 +445,66 @@ enableGitInfo = true
     endLevel = 6
 
 # Search
+[outputFormats]
+  [outputFormats.LLMSTXT]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "LLMSTXT"]
   # page = ["HTML", "Markdown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+
+[params.contact]
+  worker_url = "https://contact-api.prajwalyashasvi.in"
+  source = "memoirs.prajwalyashasvi.in"
+  lead = "Write about a post, a correction, or something else."
+
+  [[params.contact.reasons]]
+    value = "response"
+    label = "A response to a post"
+  [[params.contact.reasons]]
+    value = "correction"
+    label = "A correction"
+  [[params.contact.reasons]]
+    value = "other"
+    label = "Something else"
+
+[module]
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "../../shared/brand/static"
+    target = "static"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "../../shared/contact/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "../../shared/contact/static"
+    target = "static"
+  [[module.mounts]]
+    source = "../../shared/seo/layouts"
+    target = "layouts"

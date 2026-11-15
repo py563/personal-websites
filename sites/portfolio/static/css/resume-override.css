@@ -13,3 +13,10 @@ a {
 img {
   max-width: 80%;
 }
+
+/* Contact page fills the column beside the sidebar. */
+#Contact .my-auto,
+#Contact .contact-form-shell {
+  width: 100%;
+  max-width: none;
+}

@@ -48,3 +48,28 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+module:
+  mounts:
+    - source: archetypes
+      target: archetypes
+    - source: assets
+      target: assets
+    - source: content/en
+      target: content
+    - source: data
+      target: data
+    - source: i18n
+      target: i18n
+    - source: layouts
+      target: layouts
+    - source: ../../shared/brand/static
+      target: static
+    - source: static
+      target: static
+    - source: ../../shared/contact/layouts
+      target: layouts
+    - source: ../../shared/contact/static
+      target: static
+    - source: ../../shared/seo/layouts
+      target: layouts

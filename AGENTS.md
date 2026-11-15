@@ -4,7 +4,7 @@ One Git repository, three independent Hugo sites, three deployments. Do not merg
 
 | Site | Directory | Public URL | Hugo | Theme |
 |---|---|---|---|---|
-| Professional portfolio | `sites/portfolio` | `https://prajwalyashasvi.in/` | 0.108.0 extended | `themes/hugo-resume` |
+| Professional portfolio | `sites/portfolio` | `https://prajwalyashasvi.in/` | 0.169.0 extended | `themes/hugo-resume` |
 | Teaching | `sites/teaching` | `https://teaching.prajwalyashasvi.in/` | 0.169.0 extended, Node 22, Dart Sass, Pagefind | `themes/dot-org-hugo-theme` |
 | Personal blog | `sites/memoirs` | `https://memoirs.prajwalyashasvi.in/` | 0.114.0 extended | `themes/loveit` |
 
@@ -38,7 +38,7 @@ From the repository root:
 Direct Hugo, after the matching extended binary is active and submodules are initialized:
 
 ```bash
-# sites/portfolio — Hugo 0.108.0 extended
+# sites/portfolio — Hugo 0.169.0 extended
 hugo --minify --baseURL https://prajwalyashasvi.in/
 
 # sites/teaching — Hugo 0.169.0 extended
@@ -54,7 +54,7 @@ Teaching's `package.json` script `dev:build` still passes `--themesDir=../..`. T
 
 ## Hugo versions stay separate
 
-Do not build portfolio or memoirs with teaching's Hugo. LoveIt at the pinned submodule commit compiles its CSS with the LibSass embedded in Hugo 0.114 extended. Hugo 0.128 and later removed that library.
+Do not build memoirs with the portfolio or teaching Hugo. LoveIt at the pinned submodule commit compiles its CSS with the LibSass embedded in Hugo 0.114 extended. Hugo 0.128 and later removed that library. Portfolio uses 0.169 because the current hugo-resume submodule calls `hugo.Data`, which 0.108 does not provide.
 
 To try a newer Hugo against memoirs after the LoveIt submodule has been updated:
 
@@ -66,7 +66,7 @@ Leave `HUGO_PORTFOLIO` and `HUGO_TEACHING` alone. If the experiment works, chang
 
 ## Shared code
 
-`shared/` is a placeholder. Do not add a theme, CSS, or partial there unless the same behavior already exists in two sites and each site can override it. Do not add `go.mod` or rename `config.toml` to `hugo.toml` as a cleanup. Those files are the production configuration.
+`shared/contact/` is the contact form used by all three sites. Each site mounts it and sets its own `contact.source` and `contact.reasons`. Do not add a theme there, and do not add `go.mod` or rename `config.toml` to `hugo.toml` as a cleanup. Those files are the production configuration.
 
 Theme checkouts under `sites/*/themes/` are git submodules. Change them by moving the submodule pointer, not by editing theme files in place.
 

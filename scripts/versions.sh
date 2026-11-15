@@ -3,7 +3,7 @@
 # rebuilt on a newer Hugo without moving the other pins:
 #   HUGO_MEMOIRS=0.139.4 ./scripts/build-one.sh memoirs
 
-: "${HUGO_PORTFOLIO:=0.108.0}"
+: "${HUGO_PORTFOLIO:=0.169.0}"
 : "${HUGO_TEACHING:=0.169.0}"
 : "${HUGO_MEMOIRS:=0.114.0}"
 

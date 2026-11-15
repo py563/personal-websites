@@ -1,0 +1,35 @@
+{{ if eq hugo.Environment "development" }}
+<meta name="robots" content="noindex, nofollow" />
+{{ end }}
+
+{{ $description := .Site.Params.description | default "" }}
+{{ $job := .Site.Params.seo.jobTitle | default "Educator and Full Stack Developer" }}
+{{ $sameAs := .Site.Params.seo.sameAs | default (slice "https://prajwalyashasvi.in/" "https://teaching.prajwalyashasvi.in/" "https://memoirs.prajwalyashasvi.in/" "https://github.com/py563") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ printf "%s#website" .Site.BaseURL | jsonify }},
+      "url": {{ .Site.BaseURL | jsonify }},
+      "name": {{ .Site.Title | jsonify }},
+      "description": {{ $description | jsonify }},
+      "inLanguage": {{ .Site.Language.Lang | jsonify }},
+      "publisher": { "@id": {{ printf "%s#person" .Site.BaseURL | jsonify }} }
+    },
+    {
+      "@type": "Person",
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify }},
+      "name": "Prajwal Yashasvi Maredukonda",
+      "url": "https://prajwalyashasvi.in/",
+      "sameAs": {{ $sameAs | jsonify }},
+      "jobTitle": {{ $job | jsonify }},
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Yayin AI Lab"
+      }
+    }
+  ]
+}
+</script>

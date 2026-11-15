@@ -1,11 +1,12 @@
 (function () {
-  var form = document.getElementById("teaching-contact-form");
+  var form = document.getElementById("contact-form");
   if (!form) return;
 
   var workerUrl = form.getAttribute("data-worker-url");
   var source = form.getAttribute("data-source") || window.location.hostname || "";
-  var statusEl = document.getElementById("teaching-contact-status");
-  var submitBtn = document.getElementById("teaching-contact-submit");
+  var statusEl = document.getElementById("contact-status");
+  var submitBtn = document.getElementById("contact-submit");
+  var reasonEl = document.getElementById("contact-reason");
   if (!workerUrl || !submitBtn) return;
 
   var defaultLabel = submitBtn.textContent;
@@ -18,6 +19,11 @@
     if (type) statusEl.classList.add(type);
   }
 
+  function reasonLabel() {
+    if (!reasonEl || reasonEl.selectedIndex < 0) return "";
+    return reasonEl.options[reasonEl.selectedIndex].text || "";
+  }
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     setStatus("Sending your message…", "is-pending");
@@ -25,13 +31,23 @@
     submitBtn.textContent = "Sending…";
 
     var formData = new FormData(form);
+    var reason = formData.get("reason") || "";
+    var why = reasonLabel();
+    var page = window.location.href;
+    var note = formData.get("message") || "";
     var payload = {
       name: formData.get("name"),
       phoneNumber: formData.get("phoneNumber"),
       email: formData.get("email"),
-      message: formData.get("message"),
+      reason: reason,
+      page: page,
       source: source,
       nickname: formData.get("nickname"),
+      message:
+        "Site: " + source + "\n" +
+        "Page: " + page + "\n" +
+        "Why: " + why + "\n\n" +
+        note,
     };
 
     fetch(workerUrl, {

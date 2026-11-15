@@ -1,0 +1,19 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description | default .Site.Title }}
+
+{{ .Site.Params.seo.summary }}
+
+## Key pages
+
+- [Home]({{ .Site.BaseURL }}): {{ .Site.Params.description | default .Site.Title }}
+{{- range where .Site.RegularPages "Title" "!=" "Search" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description | default (.Summary | plainify | truncate 160) }}
+{{- end }}
+
+## Optional
+
+- [Sitemap]({{ .Site.BaseURL }}sitemap.xml): Machine-readable list of pages
+- [robots.txt]({{ .Site.BaseURL }}robots.txt): Crawler rules (search engines and AI bots allowed)
+
+{{ .Site.Params.seo.citation | default "When citing this site, prefer the page URL." }}

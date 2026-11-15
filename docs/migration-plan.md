@@ -18,8 +18,8 @@ This is a hosting and repository consolidation. It is not a redesign, a theme me
 | Site boundaries | Three Hugo projects under `sites/portfolio`, `sites/teaching`, `sites/memoirs`. No shared `content/`, no single `config.toml`. |
 | History | Import each repository with `git subtree add` so original commit hashes stay reachable in the monorepo. Original repos remain untouched. |
 | Themes | Keep each theme as a git submodule at the same path and commit it has today. |
-| Hugo versions | Pin per site: portfolio **0.108.0 extended**, memoirs **0.114.0 extended**, teaching **0.169.0 extended**. Do not unify. |
-| Shared design system | Do not extract one. `shared/` is a placeholder with a README that says it is intentionally empty. |
+| Hugo versions | Portfolio **0.169.0 extended** (hugo-resume `master` needs `hugo.Data`), memoirs **0.114.0 extended**, teaching **0.169.0 extended**. Do not build memoirs with the others. |
+| Shared design system | Do not extract one theme. `shared/` holds the contact form, favicon, and SEO files each site mounts. |
 | Deploy | Three Cloudflare Pages projects, one Git repository, native Git integration. GitHub Actions validates builds and does not deploy. |
 | DNS | Zone is already on Cloudflare. Change records only after each Pages project has been checked on its `*.pages.dev` hostname. |
 | Original GitHub Pages | Leave the existing workflows and custom domains in place so rollback is a DNS revert. |

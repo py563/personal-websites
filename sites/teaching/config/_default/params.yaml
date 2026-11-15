@@ -7,7 +7,6 @@ custom_css:
   - "/css/brand.css"
   - "/css/theme-colors.css"
   - "/css/layout.css"
-  - "/css/contact-form.css"
 
 ######################## custom config ####################
 
@@ -36,9 +35,23 @@ social_links:
   twitter: "https://x.com/py563"
   youtube: ""
 
+seo:
+  summary: "Courses, syllabi, and teaching resources from colleges where Prajwal has taught, plus Faculty Development Programmes, talks, and STTP material where he was a resource person."
+  citation: "When citing this site, prefer the page URL for the specific course or topic."
+
 contact:
   worker_url: "https://contact-api.prajwalyashasvi.in"
   source: "teaching.prajwalyashasvi.in"
+  lead: "Send a message about a course, permission to reuse material, or working together."
+  reasons:
+    - value: courses
+      label: A course or these notes
+    - value: permission
+      label: Permission to reuse material
+    - value: collaboration
+      label: Working together
+    - value: other
+      label: Something else
 
 # Makes the header sticky on tall screens
 sticky_header: true

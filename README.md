@@ -4,7 +4,7 @@ Three Hugo sites in one repository. Each site keeps its own configuration, conte
 
 | Site | Path | URL | Hugo |
 |---|---|---|---|
-| Portfolio | `sites/portfolio` | https://prajwalyashasvi.in/ | 0.108.0 extended |
+| Portfolio | `sites/portfolio` | https://prajwalyashasvi.in/ | 0.169.0 extended |
 | Teaching | `sites/teaching` | https://teaching.prajwalyashasvi.in/ | 0.169.0 extended |
 | Memoirs | `sites/memoirs` | https://memoirs.prajwalyashasvi.in/ | 0.114.0 extended |
 

@@ -1,0 +1,74 @@
+{{- $contact := site.Params.contact -}}
+{{- $worker := "https://contact-api.prajwalyashasvi.in" -}}
+{{- $source := site.BaseURL -}}
+{{- $lead := "Send a message. Include what you need and I will reply by email." -}}
+{{- $reasons := slice -}}
+{{- with $contact -}}
+  {{- with .worker_url -}}{{- $worker = printf "%v" . -}}{{- end -}}
+  {{- with .source -}}{{- $source = printf "%v" . -}}{{- end -}}
+  {{- with .lead -}}{{- $lead = . -}}{{- end -}}
+  {{- with .reasons -}}{{- $reasons = . -}}{{- end -}}
+{{- end -}}
+
+<link rel="stylesheet" href="{{ "css/contact-form.css" | relURL }}">
+
+<div class="contact-form-shell">
+  <p class="contact-form-shell__lead">{{ $lead }}</p>
+
+  <form
+    class="contact-form"
+    id="contact-form"
+    method="post"
+    novalidate
+    data-worker-url="{{ $worker }}"
+    data-source="{{ $source }}"
+  >
+    <div class="contact-form__row contact-form__row--split">
+      <div class="contact-form__field">
+        <label for="contact-name">Name</label>
+        <input id="contact-name" type="text" name="name" required autocomplete="name" placeholder="Your name">
+      </div>
+      <div class="contact-form__field">
+        <label for="contact-phone">Phone</label>
+        <input id="contact-phone" type="tel" name="phoneNumber" required autocomplete="tel" placeholder="+91 …">
+      </div>
+    </div>
+
+    <div class="contact-form__field">
+      <label for="contact-email">Email</label>
+      <input id="contact-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+    </div>
+
+    <div class="contact-form__field">
+      <label for="contact-reason">Why are you writing?</label>
+      <select id="contact-reason" name="reason" required>
+        <option value="" selected disabled>Choose one</option>
+        {{- range $reasons }}
+        <option value="{{ .value }}">{{ .label }}</option>
+        {{- end }}
+      </select>
+    </div>
+
+    <div class="contact-form__field contact-form__honeypot" aria-hidden="true">
+      <label for="contact-nickname">Nickname</label>
+      <input id="contact-nickname" type="text" name="nickname" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div class="contact-form__field">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" required placeholder="What would you like to discuss?"></textarea>
+    </div>
+
+    <div class="contact-form__footer">
+      <button type="submit" class="contact-form__submit" id="contact-submit">Send message</button>
+      <p class="contact-form__status" id="contact-status" role="status" aria-live="polite" hidden></p>
+    </div>
+  </form>
+
+  <p class="contact-form__fine">
+    Prefer email?
+    <a href="mailto:hello@prajwalyashasvi.in">hello@prajwalyashasvi.in</a>
+  </p>
+</div>
+
+<script defer src="{{ "js/contact-form.js" | relURL }}"></script>

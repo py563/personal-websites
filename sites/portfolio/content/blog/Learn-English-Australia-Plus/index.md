@@ -28,7 +28,7 @@ She sets up two or three learning pointers to improve for a section in each vide
 
 Notes and activities for the video are available on the corresponding page on the ABC education website. If you would like to hone your computer programming skills, please be free to use the below python code to download the notes and activities for personal use. We will discuss the learning points covered in videos in the next two posts.
 
-{{< gist py563 a77e7413aeffa8d12be459446c164d4f >}}
+[Python notes downloader (GitHub Gist)](https://gist.github.com/py563/a77e7413aeffa8d12be459446c164d4f)
 
 When I prepared for the IELTS Exam back in April 2018, I curated this collection of resources. I admire the above presenters and organizations, who hosted the invaluable IELTS learning video series, lessons, and resources on the web to students as free content. Content Owners -- [ Margot Politis (ABC) Study English: IELTS Preparation](https://links.awashedupnerd.in/aplus)
 

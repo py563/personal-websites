@@ -2,10 +2,10 @@
 
 Professional site for `https://prajwalyashasvi.in/`. This directory is its own Hugo project. Do not edit `sites/teaching` or `sites/memoirs` to satisfy a portfolio change.
 
-- Hugo **0.108.0 extended** only. Build with `./scripts/build-one.sh portfolio` from the repository root.
+- Hugo **0.169.0 extended**. The hugo-resume submodule at upstream `master` uses `hugo.Data`, which 0.108 cannot run. Build with `./scripts/build-one.sh portfolio` from the repository root.
 - Config file is `config.toml`. Do not rename it.
 - Theme submodule: `themes/hugo-resume`. Override templates in `layouts/`. The only site layout today is `layouts/shortcodes/floatimg.html`.
-- `baseURL` is `https://prajwalyashasvi.in/`.
+- `baseURL` is `https://prajwalyashasvi.in/`. The contact page is `content/contact.md` and uses the shared form. `contact.source` is `prajwalyashasvi.in`.
 - Publications are permalinked to `/presentations/:title/`. Leave `[permalinks]` alone.
 - Homepage sections come from `config.toml` `params.sections` and from `data/*.json`.
 - `content/blog` here is a short notes section on the portfolio. It is not the memoirs blog.

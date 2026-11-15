@@ -1,13 +1,17 @@
 # Shared
 
-This directory is intentionally empty.
+Shared pieces are mounted by each site. They are not a theme.
 
-The three sites use different themes, different Hugo versions, and different layouts. A shared theme or a shared CSS file would be a redesign, not a consolidation.
+`contact/` is the contact form. A message records:
 
-Add a file here only when all of these are true:
+- who: name, phone, and email
+- why: the reason selected on that site
+- where: the site name in `source`, plus the page URL
 
-- The markup or tokens already match in at least two sites.
-- Each site can override that file from its own `layouts/` or `assets/` without a Hugo upgrade.
-- The Cloudflare build-watch paths for every site that mounts the file include `shared/**`.
+A link to the teaching contact page is not used. That page would label every message as teaching.
 
-Until then, site-specific layouts stay inside `sites/<name>/layouts/`, and theme code stays in the theme submodule.
+Each site mounts this directory from its own Hugo config. The shortcode is `contact-form`. Site params under `contact` set the worker URL, the source label, the intro line, and the reason list.
+
+`brand/static/` is the teaching favicon set. Portfolio uses the icon files only. Memoirs uses `favicon-32x32.png` in the header in place of the pen icon.
+
+`seo/layouts/` is `robots.txt`, `llms.txt`, and the `seo-head` partial (JSON-LD for the site and person, and `noindex` while Hugo is in development). Each site sets `seo.summary`. Teaching keeps its own `site.webmanifest` name.
