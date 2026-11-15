@@ -10,6 +10,9 @@ hugo_stats.json
 # Node
 node_modules/
 
+# Wrangler local cache (account metadata). Keep wrangler.jsonc.
+.wrangler/
+
 # OS / editor
 .DS_Store
 *.swp

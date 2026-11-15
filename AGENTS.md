@@ -78,11 +78,13 @@ GitHub Actions (`.github/workflows/ci.yml`) builds all three sites. It does not 
 
 Cloudflare Pages is the publisher: three projects, one repository, production branch `main`.
 
-| Project | Root directory | Build command | Output | Include paths |
+| Project | Root directory | Build command | Deploy command | Include paths |
 |---|---|---|---|---|
-| Portfolio | `sites/portfolio` | `bash ../../scripts/build-one.sh portfolio` | `public` | `sites/portfolio/**`, `scripts/**`, `shared/**` |
-| Teaching | `sites/teaching` | `bash ../../scripts/build-one.sh teaching` | `public` | `sites/teaching/**`, `scripts/**`, `shared/**` |
-| Memoirs | `sites/memoirs` | `bash ../../scripts/build-one.sh memoirs` | `public` | `sites/memoirs/**`, `scripts/**`, `shared/**` |
+| `personal-websites-portfolio` | `sites/portfolio` | `bash ../../scripts/build-one.sh portfolio` | `npx wrangler deploy` | `sites/portfolio/**`, `scripts/**`, `shared/**` |
+| `personal-websites-teaching` | `sites/teaching` | `bash ../../scripts/build-one.sh teaching` | `npx wrangler deploy` | `sites/teaching/**`, `scripts/**`, `shared/**` |
+| `personal-websites-memoirs` | `sites/memoirs` | `bash ../../scripts/build-one.sh memoirs` | `npx wrangler deploy` | `sites/memoirs/**`, `scripts/**`, `shared/**` |
+
+`sites/<name>/wrangler.jsonc` tells Wrangler to upload `./public`. The `name` must match the Cloudflare project. Do not remove it: `config.toml` matches both the Hugo and Zola detectors, and `wrangler deploy` then refuses to configure the project.
 
 Set `NODE_VERSION=22` on the teaching project. The build script installs the pinned extended Hugo itself. Pass the production `--baseURL` values already baked into `scripts/build-one.sh`, including the trailing slash on memoirs.
 
