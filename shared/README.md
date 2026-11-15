@@ -10,7 +10,7 @@ Shared pieces are mounted by each site. They are not a theme.
 
 A link to the teaching contact page is not used. That page would label every message as teaching.
 
-Each site mounts this directory from its own Hugo config. The shortcode is `contact-form`. Site params under `contact` set the worker URL, the source label, the intro line, and the reason list.
+Each site mounts this directory from its own Hugo config. The shortcode is `contact-form`. Site params under `contact` set the worker URL, the source label, the intro line, and the reason list. Field labels follow the page language (English and Telugu). The reason choices stay in each site's config.
 
 `brand/static/` is the teaching favicon set. Portfolio uses the icon files only. Memoirs uses `favicon-32x32.png` in the header in place of the pen icon.
 
