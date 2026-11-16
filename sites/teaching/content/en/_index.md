@@ -14,7 +14,7 @@ I am [Prajwal](https://prajwalyashasvi.in). This website brings together the cou
 {{< /intro >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/wordcloud.png" loading="eager" >}}
+{{< classroom-scene >}}
 {{< /column >}}
 {{< /columns >}}
 
