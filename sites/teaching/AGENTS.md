@@ -2,7 +2,7 @@
 
 Course site for `https://teaching.prajwalyashasvi.in/`. This directory is its own Hugo project. Do not edit `sites/portfolio` or `sites/memoirs` to satisfy a teaching change.
 
-- Hugo **0.169.0 extended**, Node 22, `npm ci`, and the native `sass` binary from `sass-embedded` on `PATH`. `node_modules/.bin/sass` may point at the JavaScript `sass` package, which Hugo cannot use. `./scripts/build-one.sh teaching` selects the native binary.
+- Hugo **0.169.0 extended**, Node 22, `npm ci`, and the native `sass` binary from `sass-embedded` on `PATH`. `./scripts/build-one.sh teaching` also copies `three` from `node_modules` into `static/js/vendor/three/` for the home-page classroom scene (not committed; listed in root `.gitignore`). `node_modules/.bin/sass` may point at the JavaScript `sass` package, which Hugo cannot use. `./scripts/build-one.sh teaching` selects the native binary.
 - After Hugo, production runs `npx -y pagefind --site public`. A teaching build without Pagefind is not a production build.
 - Configuration that ships is `config/` via `--configDir=config`. The root `config.toml` is not what CI reads.
 - Theme submodule: `themes/dot-org-hugo-theme`. Overrides live in this directory's `layouts/`, `assets/scss/`, and `static/css/`. Do not edit files inside the theme submodule.

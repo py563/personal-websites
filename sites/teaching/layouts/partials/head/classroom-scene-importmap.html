@@ -1,0 +1,10 @@
+{{- if .IsHome -}}
+<script type="importmap">
+{
+  "imports": {
+    "three": {{ "js/vendor/three/build/three.module.js" | relURL | jsonify }},
+    "three/addons/": {{ "js/vendor/three/examples/jsm/" | relURL | jsonify }}
+  }
+}
+</script>
+{{- end -}}

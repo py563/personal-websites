@@ -1584,16 +1584,11 @@ renderer.domElement.addEventListener('pointerup', (event) => {
   else if (type === 'teacher') STATE.teacherWaveTimer = 1.4;
 });
 
-let running = true;
-let inView = true;
+let running = document.visibilityState === 'visible';
 function syncRunning() {
-  running = inView && document.visibilityState === 'visible';
+  running = document.visibilityState === 'visible';
 }
 document.addEventListener('visibilitychange', syncRunning);
-new IntersectionObserver((entries) => {
-  inView = entries.some((entry) => entry.isIntersecting);
-  syncRunning();
-}, { threshold: 0.05 }).observe(container);
 new ResizeObserver(() => fit()).observe(container);
 
 const clock = new THREE.Clock();

@@ -88,6 +88,20 @@ ensure_submodules() {
   git -C "$ROOT" submodule update --init --recursive
 }
 
+vendor_teaching_three() {
+  local dir="$1"
+  local three_root="${dir}/node_modules/three"
+  local vendor_root="${dir}/static/js/vendor/three"
+  if [[ ! -f "${three_root}/build/three.module.js" ]]; then
+    echo "three package missing; run npm ci in sites/teaching first." >&2
+    return 1
+  fi
+  mkdir -p "${vendor_root}/build" "${vendor_root}/examples"
+  cp -f "${three_root}/build/three.module.js" "${vendor_root}/build/"
+  rm -rf "${vendor_root}/examples/jsm"
+  cp -R "${three_root}/examples/jsm" "${vendor_root}/examples/"
+}
+
 prepare_teaching_tools() {
   local dir="$1"
   if ! command -v node >/dev/null 2>&1; then
@@ -100,6 +114,7 @@ prepare_teaching_tools() {
     echo "Warning: teaching .nvmrc asks for Node ${NODE_TEACHING}; this shell has Node $(node -v)." >&2
   fi
   (cd "$dir" && npm ci)
+  vendor_teaching_three "$dir"
   # npm may link node_modules/.bin/sass to the JS "sass" package. Hugo's
   # dartsass transpiler needs the native binary shipped by sass-embedded.
   local pkg sass_bin os arch

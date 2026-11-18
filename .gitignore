@@ -10,6 +10,9 @@ hugo_stats.json
 # Node
 node_modules/
 
+# Copied from node_modules/three during teaching builds
+sites/teaching/static/js/vendor/
+
 # Wrangler local cache (account metadata). Keep wrangler.jsonc.
 .wrangler/
 
