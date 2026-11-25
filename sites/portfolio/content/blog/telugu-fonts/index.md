@@ -29,7 +29,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Noto fonts website](https://www.google.com/get/noto/#sans-telu)
 
-- Source code: Available in this [Github](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSansTelugu) repository.
+- Source code: Available in this [GitHub](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSansTelugu) repository.
 
 ### Noto Serif
 
@@ -41,7 +41,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Noto fonts website](https://www.google.com/get/noto/#serif-telu)
 
-- Source code: Available in this [Github](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSerifTelugu) repository.
+- Source code: Available in this [GitHub](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSerifTelugu) repository.
 
 ### Mandali
 
@@ -53,7 +53,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Mandali?subset=telugu#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/appajid/mandali) repository.
+- Source code: Available in this [GitHub](https://github.com/appajid/mandali) repository.
 
 ### Ramaraja
 
@@ -65,7 +65,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Ramaraja?subset=telugu#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/appajid/ramaraja) repository.
+- Source code: Available in this [GitHub](https://github.com/appajid/ramaraja) repository.
 
 ### Gurujada
 
@@ -77,7 +77,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download here: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Gurajada?subset=telugu#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/appajid/gurajada) repository.
+- Source code: Available in this [GitHub](https://github.com/appajid/gurajada) repository.
 
 ### Chathura
 
@@ -89,7 +89,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Chathura?subset=telugu#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/appajid/chathura) repository.
+- Source code: Available in this [GitHub](https://github.com/appajid/chathura) repository.
 
 ### Baloo Tammudu 2
 
@@ -101,4 +101,4 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Baloo+Tammudu+2?subset=telugu#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/EkType/Baloo2) repository.
+- Source code: Available in this [GitHub](https://github.com/EkType/Baloo2) repository.

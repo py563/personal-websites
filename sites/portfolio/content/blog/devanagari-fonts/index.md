@@ -37,13 +37,13 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Designed by: Google, available by default in Chromebooks.
 
-- Available Styles: 32 different sytles, includes codensed and extra condensed variants.
+- Available Styles: 32 different styles, includes codensed and extra condensed variants.
 
 - License: SIL Open Font License, Version 1.1
 
 - Download: Preview and download from [Noto fonts website](https://www.google.com/get/noto/#sans-deva)
 
-- Source code: Available in this [Github](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSansDevanagari) repository.
+- Source code: Available in this [GitHub](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSansDevanagari) repository.
 
 - Languages covered: 63
 
@@ -57,7 +57,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Noto fonts website](https://www.google.com/get/noto/#serif-deva)
 
-- Source code: Available in this [Github](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSerifDevanagari) repository.
+- Source code: Available in this [GitHub](https://github.com/googlefonts/noto-fonts/tree/master/hinted/NotoSerifDevanagari) repository.
 
 - Languages covered: 63
 
@@ -65,37 +65,37 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Designed by: Pria Ravichandran
 
-- Available Styles: 11 different sytles, from thin to bold and thicker bold variants.
+- Available Styles: 11 different styles, from thin to bold and thicker bold variants.
 
 - License: SIL Open Font License, Version 1.1
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Palanquin?subset=devanagari&preview.size=30#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/VanillaandCream/Palanquin) repository. Repository holds a Docs folder with related feedback, testing and detailed sample text rendered in the Palanquin font.
+- Source code: Available in this [GitHub](https://github.com/VanillaandCream/Palanquin) repository. Repository holds a Docs folder with related feedback, testing and detailed sample text rendered in the Palanquin font.
 
 ### Mukta
 
 - Designed by: Ek Type
 
-- Available Styles: 8 different sytles, from extra light 200 to extra bold 800 variants. Mukta font-family also has fonts for Gujarati, Gurumukhi and Tamil languages.
+- Available Styles: 8 different styles, from extra light 200 to extra bold 800 variants. Mukta font-family also has fonts for Gujarati, Gurumukhi and Tamil languages.
 
 - License: SIL Open Font License, Version 1.1
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Mukta?subset=devanagari&preview.size=30)
 
-- Source code: Available in this [Github](https://github.com/EkType/Mukta) repository.
+- Source code: Available in this [GitHub](https://github.com/EkType/Mukta) repository.
 
 ### Martel Sans
 
 - Designed by: Dan Reynolds.
 
-- Available Styles: 7 different sytles, from Extra light 200 to 900 variants. It supports high-contrast strokes with a diagonal axis. He created the typeface Dasa, and together with Mathieu Réguer developed Biryani and Martel Sans.
+- Available Styles: 7 different styles, from Extra light 200 to 900 variants. It supports high-contrast strokes with a diagonal axis. He created the typeface Dasa, and together with Mathieu Réguer developed Biryani and Martel Sans.
 
 - License: SIL Open Font License, Version 1.1
 
 - Download: Preview and download from [Typeoff website](https://www.typeoff.de/webfonts/martel-sans/)
 
-- Source code: Available in this [Github](https://github.com/typeoff/martel_sans) repository.
+- Source code: Available in this [GitHub](https://github.com/typeoff/martel_sans) repository.
 
 ### Pragati Narrow
 
@@ -107,7 +107,7 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Omnibus-Type website](https://www.omnibus-type.com/fonts/pragati-narrow/)
 
-- Source code: Available in this [Github](https://github.com/Omnibus-Type/PragatiNarrow) repository.
+- Source code: Available in this [GitHub](https://github.com/Omnibus-Type/PragatiNarrow) repository.
 
 ### Glegoo
 
@@ -119,19 +119,19 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Glegoo?subset=devanagari&preview.size=30#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/etunni/glegoo) repository.
+- Source code: Available in this [GitHub](https://github.com/etunni/glegoo) repository.
 
 ### Poppins
 
 - Designed by: Indian Type Foundry.
 
-- Available Styles: 18 different sytles, like Thin 100, italic, regular, bold and thicker variants.
+- Available Styles: 18 different styles, like Thin 100, italic, regular, bold and thicker variants.
 
 - License: SIL Open Font License, Version 1.1
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Poppins?subset=devanagari&preview.size=30#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/itfoundry/poppins) repository.
+- Source code: Available in this [GitHub](https://github.com/itfoundry/poppins) repository.
 
 ### Kalam
 
@@ -143,4 +143,4 @@ If you are facing issues adding a new language on your device, please follow the
 
 - Download: Preview and download from [Google fonts website](https://fonts.google.com/specimen/Kalam?subset=devanagari&category=Handwriting#standard-styles)
 
-- Source code: Available in this [Github](https://github.com/itfoundry/kalam) repository.
+- Source code: Available in this [GitHub](https://github.com/itfoundry/kalam) repository.
